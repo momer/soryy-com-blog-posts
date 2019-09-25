@@ -328,9 +328,8 @@ call. The final call to our `server`'s `Serve` method is defined as:
 	// then call srv.Handler to reply to them.
 	func (srv *Server) Serve(l net.Listener) error {
 		defer l.Close()
-        // Commentary:
-        // how long to sleep on accept failure
-		var tempDelay time.Duration
+        
+		var tempDelay time.Duration // how long to sleep on accept failure
 		for {
 			rw, e := l.Accept()
 			if e != nil {
@@ -354,9 +353,8 @@ call. The final call to our `server`'s `Serve` method is defined as:
 			if err != nil {
 				continue
 			}
-            // Commentary:
-            // before Serve can return
-			c.setState(c.rwc, StateNew)
+            
+			c.setState(c.rwc, StateNew) // before Serve can return
 			go c.serve()
 		}
 	}
