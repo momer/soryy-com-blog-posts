@@ -29,10 +29,8 @@ can tell you this:
       You can switch out your kernel or ensure that you deselect the option to use a 
       custom kernel when you're going through the set-up process for your host 
       machine.
-
   2. I had issues with containers running on a host which was running Ubuntu
        14.04 being unable to resolve any DNS.<
-
   3. If you're not on OVH but landed here because you're having issues with 
       your firewall and containers, you should note that adding IPTables rules 
       after your docker daemon has started is a bad idea. You can see why just
@@ -41,6 +39,7 @@ can tell you this:
        https://github.com/dotcloud/docker/blob/master/daemon/networkdriver/bridge/driver.go#L176-L239)
 
 ## Fix it fix it fix it fix it fix it fix it
+
 There's no need to uninstall bind9 or resolvconf. Simply use Google's public 
 DNS servers instead by adding them to your box's network config.
 

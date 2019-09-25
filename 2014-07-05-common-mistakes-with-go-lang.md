@@ -138,7 +138,7 @@ users:
 - Average response time *decreased* from **<span class="red">110ms</span>** to
     **<span class="green">32ms</span>**
 - Maximum response time *decreased* from **<span class="red">438ms</span>** to 
-    **<span class="green">&lt; 33ms</span>**
+    **<span class="green">< 33ms</span>**
 - Total number of timeouts *decreased* from **<span class="red">5401</span>** to 
     **<span class="green">0</span>**
 - Total number of errors *decreased* from **<span class="red">2</span>** to 

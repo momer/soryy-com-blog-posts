@@ -54,7 +54,7 @@ For those of us that haven't, what's going on here is:
 
 - First, we import the ["net/http"](http://golang.org/pkg/net/http/) package.
 - Then, we see a function definition for a function called `handler`.
-    - As arguments, `handler` takes an http.ResponseWriter and a pointer to an 
+    - As arguments, `handler` takes an `http.ResponseWriter` and a pointer to an 
     `http.Request`.
 - Next, in our `main()` function, we use `http.HandleFunc(<path>, <function>)` 
 to direct all requests to `"/"` to our `handler` function.
@@ -65,7 +65,7 @@ multiplexer).
 The wiki goes on to talk about how this works at a high level, but let's take a 
 deeper look.
 
-#### http.ResponseWriter && http.Request
+## http.ResponseWriter && http.Request
 ---
 Our `handler` function takes two arguments: One of type [http.ResponseWriter](
 http://golang.org/pkg/net/http/#ResponseWriter), and the other a pointer to a 
@@ -182,7 +182,7 @@ http://golang.org/src/pkg/net/http/request.go?s=2132:8067#L66) than that of
 Suffice it to say that if any request parameters, data, etc. had come 
 through, we could retrieve and parse them from that `http.Request` pointer.
 
-#### ServeMux
+## ServeMux
 ---
 
 In our example, we're not making use of the `http.Request` pointer argument at 
@@ -192,9 +192,9 @@ defined by the `DefaultServeMux` multiplexer. You might be wondering where the
 hell the code for that came from - we haven't seen any declaration of this 
 `DefaultServeMux`, or anything; but, when we passed in `nil` to our
 
-{% highlight go %}
+```go
 	http.ListenAndServe(":8080", nil)
-{% endhighlight %}
+```
 
 call, we implicitly asked ListenAndServe to multiplex incoming connections over 
 the Default Serve Multiplexer, which will take care of routing requests to the 
@@ -381,7 +381,7 @@ we've called the `Serve` method on our new accepted connection with its own
 Goroutine. This, along with other Goroutines running (like our current 
 `main()` Goroutine), will be multiplexed in the Go Runtime. 
 
-#### That's it
+## That's it
 ---
 
 In under 300 lines of markdown, we've uncovered the magic behind the 

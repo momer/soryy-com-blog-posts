@@ -1,10 +1,3 @@
----
-layout: post
-title:  "Indepth Golang: Resources and Notes"
-date:   2014-08-09 11:26:52
-categories: Go Golang resources documentation learning  
----
-
 # Indepth Golang: Resources and Notes
 ---
 I was hanging out at work for a little after-hours learning/coding this past 
