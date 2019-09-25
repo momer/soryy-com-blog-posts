@@ -32,7 +32,7 @@ The crux of the idea is this:
 1. We want to create a minimal authentication system whereby we receive a
 username, email, or other user identifier, and a password; after authenticating
 the user, we'll return an authentication token for use in subsequent 
-requests[1].
+requests [1].
 2. We should, in all subsequent requests, allow a user to be authenticated via
 their authentication token.
 3. We should be reasonably careful in handling this authentication information.  
@@ -40,7 +40,7 @@ their authentication token.
 To satisfy our criteria, I tend to use something similar as to what's suggested
 on [this gist by @josevalim on github](
 https://gist.github.com/josevalim/fb706b1e933ef01e4fb6) combined with a few
-other ideas[2], with a couple of tweaks:
+other ideas [2], with a couple of tweaks:
 
 ```ruby
   # ApplicationController.rb
@@ -291,10 +291,10 @@ https://github.com/ryanb/cancan/issues/571)
 - [Make check_authorization conditional with block or options (Issue #284)](
 https://github.com/ryanb/cancan/issues/284)
 
-[1] Setting and enforcing a [TTL](http://en.wikipedia.org/wiki/Time_to_live) 
+[1]: Setting and enforcing a [TTL](http://en.wikipedia.org/wiki/Time_to_live) 
 is an exercise left to the reader.
 
-[2] There are a number of [gists](http://gist.github.com) that re-use some of 
+[2]: There are a number of [gists](http://gist.github.com) that re-use some of 
 the same code snippets I'm pasting below, but tracing back the original source 
 can be tough. 
 
