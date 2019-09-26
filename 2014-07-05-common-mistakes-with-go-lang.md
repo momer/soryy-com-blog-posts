@@ -7,7 +7,7 @@ months ago I had the need to serve millions of hits from a small grouping of
 dedicated servers, which needed to:
 
 1. Cache requests for a pre-determined TTL
-2. Reach out to my database (Cassandra with a cluster in the same Datacenter)
+2. Reach out to my database (Cassandra with a cluster in the same Data Center)
 3. Return a JSON marshalled response for any given endpoint
 
 In ideally under 10ms. I architected a solution which relied heavily on Go:
@@ -49,7 +49,7 @@ is an incredibly powerful technique for using functions made publicly available
   ![RPC Technique Overview](http://i.imgur.com/lYQgi0R.gif)
 </p>
 
-<p class="center">
+<p class="text-center">
   <small>source: [http://www.cs.cf.ac.uk/Dave/C/node33.html](http://www.cs.cf.ac.uk/Dave/C/node33.html)</small>
 </p>
 
@@ -115,7 +115,7 @@ connection on every request. As the number of requests scaled up, this quickly
 caused both the Data Access RPC Server *and* the Webserver to stumble over 
 themselves, as we can see here:
 
-![Stress testing via blitz.io]({{ site.url }}/assets/img/rpcPitfallBlitzErrors.png)
+![Stress testing via blitz.io](/assets/img/rpcPitfallBlitzErrors.png)
 
 So, what's the solution? Well, if we look closely at the relevant areas of the 
 [net/rpc Package source code](

@@ -17,7 +17,7 @@ http://gigaom.com/2013/03/04/the-history-of-hadoop-from-4-nodes-to-the-future-of
   <img src="/assets/img/mapred.png" alt="MapReduce" />
 </p>
 
-<p class="center">
+<p class="text-center">
   <small><a href="http://research.google.com/archive/mapreduce-osdi04-slides/index-auto-0007.html">MapReduce: Simplified Data Processing on Large Clusters - Google</a></small>
 </p>
 
@@ -86,7 +86,7 @@ Then, you head over to the site's "HTML Snapshot" at
   <img src="/assets/img/damnDesertMed.jpg" alt="Fuck." />
 </p>
 
-<p class="center">
+<p class="text-center">
   <small>
       <a href="https://flic.kr/p/a4Wgar">picture by Moyan Brenn on Flickr</a>
   </small>
@@ -114,7 +114,7 @@ https://lucene.apache.org/images/screenshot1.png) reveals...
 <p class="center">
   <img src="/assets/img/soClose.jpg" alt="Fuck #2." />
 </p>
-<p class="center">
+<p class="text-center">
   <small>
       <a href="https://flic.kr/p/7bBMP8">picture by Atlantic Community on Flickr</a>
   </small>
@@ -162,7 +162,7 @@ http://www.bradwestness.com/2014/05/angularjs-and-the-post-graceful-degradation-
   <img src="/assets/img/littleTriumph.jpg" alt="Triumph" />
 </p>
 
-<p class="center">
+<p class="text-center">
   <small>
       <a href="https://flic.kr/p/4HL9Ji">picture by Evan Long on Flickr</a>
   </small>
@@ -216,7 +216,7 @@ However, Firefox continued to cause issues; and, when asking Supervisord to kill
   <img src="/assets/img/littleGirlBalloon.jpg" alt="Well, it works" />
 </p>
 
-<p class="center">
+<p class="text-center">
   <small>
     <a href="https://flic.kr/p/6MRfVX">picture by Nagesh Jayaraman on Flickr</a>
   </small>
